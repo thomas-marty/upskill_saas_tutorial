@@ -21,6 +21,7 @@ h1,h2,h3 {
   font-family: 'Open Sans',sans-serif;
 }
 
+// Background gradient
 .navbar, .home-callout {
   background: #005C97;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
@@ -28,31 +29,23 @@ h1,h2,h3 {
   color:white;
 }
 
-.navbar-default .navbar-brand {
+// & pseudo class hover inserted using saas (scss)
+.navbar-default .navbar-brand,.navbar-default .navbar-nav > li > a  {
   color:white;
+  &:hover {
+    color:white;
+    opacity:0.75;
+  }
 }
 
-.navbar-default .navbar-brand:hover {
-  color:white;
-  opacity:0.75;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color:white;
-  opacity:0.75;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color:white;
-}
-
-
+// Homepage style
 .home-callout {
   margin-top: -20px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
 
+// Nav style
 .navbar{
   border:none;
 }
